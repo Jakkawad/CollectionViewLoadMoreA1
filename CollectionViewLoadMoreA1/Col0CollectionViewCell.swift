@@ -11,4 +11,5 @@ import UIKit
 class Col0CollectionViewCell: UICollectionViewCell {
     
     @IBOutlet weak var lblName: UILabel!
+    @IBOutlet weak var imageViewProduct: UIImageView!
 }

@@ -14,7 +14,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" id="ZUU-IK-agv">
-                                <rect key="frame" x="0.0" y="74" width="320" height="494"/>
+                                <rect key="frame" x="0.0" y="94" width="320" height="437"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                                 <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="h85-h3-pyK">
@@ -31,6 +31,10 @@
                                             <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="vbm-dr-i1W">
+                                                    <rect key="frame" x="0.0" y="0.0" width="100" height="100"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="9bh-UI-bvY">
                                                     <rect key="frame" x="8" y="8" width="84" height="21"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -42,6 +46,7 @@
                                             <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
                                         </view>
                                         <connections>
+                                            <outlet property="imageViewProduct" destination="vbm-dr-i1W" id="69p-Ec-i4V"/>
                                             <outlet property="lblName" destination="9bh-UI-bvY" id="SCw-Fa-JqJ"/>
                                         </connections>
                                     </collectionViewCell>
@@ -51,11 +56,16 @@
                                     <outlet property="delegate" destination="BYZ-38-t0r" id="6xl-qN-S6K"/>
                                 </connections>
                             </collectionView>
+                            <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="gray" id="crv-3R-iCd">
+                                <rect key="frame" x="150" y="539" width="20" height="20"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="N6A-un-JEK"/>
                     <connections>
+                        <outlet property="activityIndicator" destination="crv-3R-iCd" id="dVX-yG-Twh"/>
                         <outlet property="collectionView" destination="ZUU-IK-agv" id="tgS-Fa-EZm"/>
                     </connections>
                 </viewController>
